@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Lab_1
 {
-    struct Die
+    public struct Die
     {
         public int Faces { get; }
         public double[] Probabilities { get; }
