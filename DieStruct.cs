@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 
-struct Die
+namespace Lab_1
 {
-    public int Faces { get; }
-    public double[] Probabilities { get; }
-
-    public Die(int faces, double[] probabilities)
+    struct Die
     {
-        Faces = faces;
-        Probabilities = probabilities;
+        public int Faces { get; }
+        public double[] Probabilities { get; }
+
+        public Die(int faces, double[] probabilities)
+        {
+            Faces = faces;
+            Probabilities = probabilities;
+        }
     }
 }
