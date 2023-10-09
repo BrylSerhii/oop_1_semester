@@ -8,8 +8,11 @@ namespace Lab_1
         {
             List<Die> diceSet = new List<Die>
         {
-            new Die(6, new double[] { 1.0 / 6, 1.0 / 6, 1.0 / 6, 1.0 / 6, 1.0 / 6, 1.0 / 6 }),
-            new Die(4, new double[] { 0.25, 0.25, 0.25, 0.25 })
+            // Die with 6 faces, each with different probabilities
+            new Die(6, new double[] { 0.1, 0.15, 0.2, 0.15, 0.2, 0.2 }),
+
+            // Die with 10 faces, each with different probabilities
+            new Die(10, new double[] { 0.05, 0.08, 0.1, 0.12, 0.15, 0.1, 0.08, 0.07, 0.1, 0.15 })
         };
 
             var sumProbabilities = DiceProbabilityCalculator.CalculateSumProbabilities(diceSet);
